@@ -32,7 +32,3 @@ btn.addEventListener("click", () => {
       result.innerHTML = `<h3 class="error">No definitions found, sorry</h3>`;
     });
 });
-
-function playSound() {
-  sound.play();
-}
