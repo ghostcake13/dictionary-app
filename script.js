@@ -25,11 +25,9 @@ btn.addEventListener("click", () => {
         </p>
         <p class="word-example">
           ${data[0].meanings[0].definitions[0].example || ""}
-        </p>
-    `;
-      sound.setAttribute("src", `http:${data[0].phonetics[0].audio}`);
+        </p>`;
+      sound.setAttribute("src", `https:${data[0].phonetics[0].audio}`);
     })
-
     .catch(() => {
       result.innerHTML = `<h3 class="error">No definitions found, sorry</h3>`;
     });
